@@ -1,0 +1,137 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+        
+    
+        <style>
+            .row > div.graybox{
+                padding: 10px;
+                background: #ddd;
+                border: 1px solid #fff;
+                line-height: 60px;
+
+            }
+
+            .row{
+                margin: 40px auto;
+            }
+
+            .col > div{
+                background: lightblue;
+                height: 120px;
+            }
+
+            nav .badge{
+                position: relative;
+                top: 20px;
+                right: 20px;
+                border-radius: 10%;
+                /*
+                width:20px;
+                height:30px; */
+            }
+        </style>
+        <title>Grids</title>
+    </head>
+<body>
+
+    <nav class="nav-wrapper indigo">
+        <div class="container">
+            <a href="index.html" class="brand-logo">Site Title</a>
+            <a href="index.html" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="grids.html">Grids</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li>
+                    <a href="#" class="btn-floating indigo darken-4 z-depth-0">
+                        <i class="material-icons">notifications</i>
+                    </a>
+                </li>
+                <li><span class="badge white-text orange darken-2">5</span></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="grids.html">Grids</a></li>
+                
+    </ul>
+    
+    <div class="container">
+        <h4>Grids</h4>
+
+        <div class="row">
+
+            <div class="col s3 graybox">Content</div>
+            <div class="col s3 graybox">Content</div>
+            <div class="col s3 graybox">Content</div>
+            <div class="col s3 graybox">Content Content Content</div>
+            <div class="col s6 m3 graybox">second row</div>
+            <div class="col s6 m3 graybox">second row</div>
+
+            <!-- staggered -->
+            <div class="col m8 graybox">Content</div>
+            <div class="col m4 graybox">Content</div>
+            <div class="col m4 graybox">Content</div>
+            <div class="col m8 graybox">Content</div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Shadows and depth</h4>
+
+        <div class="row">
+            <div class="col s2">
+                <div class=""></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-1"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-5"></div>
+            </div>
+            <div class="col s2">
+                <div class=""></div>
+            </div>
+            <div class="col s2">
+                <div class=""></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    })    
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+        
+    
+        <style>
+            .row > div.graybox{
+                padding: 10px;
+                background: #ddd;
+                border: 1px solid #fff;
+                line-height: 60px;
+
+            }
+
+            .row{
+                margin: 40px auto;
+            }
+
+            .col > div{
+                background: lightblue;
+            }
+
+            nav .badge{
+                position: relative;
+                top: 20px;
+                right: 20px;
+                border-radius: 10%;
+                /*
+                width:20px;
+                height:30px; */
+            }
+        </style>
+        <title>Grids</title>
+    </head>
+<body>
+
+    <nav class="nav-wrapper indigo">
+        <div class="container">
+            <a href="index.html" class="brand-logo">Site Title</a>
+            <a href="index.html" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="grids.html">Grids</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li>
+                    <a href="#" class="btn-floating indigo darken-4 z-depth-0">
+                        <i class="material-icons">notifications</i>
+                    </a>
+                </li>
+                <li><span class="badge white-text orange darken-2">5</span></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="grids.html">Grids</a></li>
+                
+    </ul>
+    
+    <div class="container">
+        <h2>Cards</h2>
+
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/banana.jpg" alt="banana taped">
+                        <a href="#" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Card Title</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio id quis amet saepe veritatis inventore voluptatum optio, dolorem molestiae aspernatur, omnis in, accusamus quasi fugit quidem ullam quae. Ea?</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="container">
+        <h2>Collections</h2>
+
+        <div class="row">
+            <div class="col s6">
+                <ul class="collection with-header">
+                    <li class="collection-header"><h4>Header</h4></li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle blue">person</i>
+                        <span class="title">Name</span>
+                        <p class="grey-text">black belt</p>
+                        <a href="" class="secondary-content">
+                            <i class="material-icons">email</i>
+                        </a>
+                    </li>
+                    <li class="collection-item">Content</li>
+                    <li class="collection-item">Content</li>
+                    <li class="collection-item">Content</li>
+                    <li class="collection-item">Content</li>
+                    <li class="collection-item">Content</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h2>Modals</h2>
+        <a href="#pic" class="modal-trigger">
+            <img src="img/banana.jpg" alt="banana">
+        </a>
+
+        <div class="modal" id="pic">
+            <img src="img/banana.jpg" alt="banana">
+        </div>
+            
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    })    
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        })
+    </script>
+</body>
+</html>
